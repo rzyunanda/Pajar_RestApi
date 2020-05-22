@@ -23,8 +23,10 @@ class Instings extends Model
 
 
     public $fillable = [
+        'id',
         'judul',
         'materi',
+        'url_video',
         'status'
     ];
 
@@ -34,9 +36,10 @@ class Instings extends Model
      * @var array
      */
     protected $casts = [
-        'id_insting' => 'string',
+        'id' => 'string',
         'judul' => 'string',
         'materi' => 'string',
+        'url_video' => 'string',
         'status' => 'string'
     ];
 

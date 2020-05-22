@@ -10,6 +10,13 @@
     <p>{{ $instings->materi }}</p>
 </div>
 
+<!-- Materi Field -->
+<div class="form-group">
+    {!! Form::label('video', 'Video:') !!}
+    <p>{{ $instings->url_video }}</p>
+</div>
+
+
 <!-- Status Field -->
 <div class="form-group">
     {!! Form::label('status', 'Status:') !!}

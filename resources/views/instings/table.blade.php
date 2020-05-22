@@ -5,6 +5,7 @@
                 <th>Judul</th>
         <th>Materi</th>
         <th>Status</th>
+        <th>Url Video</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -14,6 +15,7 @@
                 <td>{{ $instings->judul }}</td>
             <td>{{ $instings->materi }}</td>
             <td>{{ $instings->status }}</td>
+            <td>{{ $instings->url_video }}</td>
                 <td>
                     {!! Form::open(['route' => ['instings.destroy', $instings->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

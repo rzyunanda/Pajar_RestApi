@@ -8,6 +8,7 @@ use App\Repositories\InstingsRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use App\Models\Instings;
 use Response;
 
 class InstingsController extends Controller
@@ -55,7 +56,6 @@ class InstingsController extends Controller
     public function store(CreateInstingsRequest $request)
     {
         $input = $request->all();
-
         $instings = $this->instingsRepository->create($input);
 
         Flash::success('Instings saved successfully.');

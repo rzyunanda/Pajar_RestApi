@@ -17,6 +17,7 @@ class InstingsRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
+        'id',
         'judul',
         'materi',
         'status'
