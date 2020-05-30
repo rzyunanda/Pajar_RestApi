@@ -24,6 +24,7 @@ class CreateInstingsTable extends Migration
             $table->string('judul')->nullable();
             $table->string('materi')->nullable();
             $table->string('status')->nullable();
+            $table->string('url_video')->nullable();
             $table->timestamps();
         });
     }
